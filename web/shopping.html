@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diep's Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/path/to/fashion-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 192, 203, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        select {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"][name="action"][value="Add"] {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        input[type="submit"][name="action"][value="View"] {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .welcome {
+                font-size: 20px;
+            }
+            
+            select, input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">Welcome to Diep's Store</div>
+        <form action="MainController" method="POST">
+            <label for="cmbClothes">Select your clothes:</label>
+            <select name="cmbClothes" id="cmbClothes">
+                <option value="c01-TShirt-25">TShirt-$25</option>
+                <option value="c02-Long Shirt-40">Long Shirt-$40</option>
+                <option value="c03-Short Pain-30">Short Pants-$30</option>
+                <option value="c04-Blue Cowbowl Jean-55">Blue Cowbowl Jean-$55</option>
+            </select>
+            <label for="cmbQuantity">Quantity:</label>
+            <select name="cmbQuantity" id="cmbQuantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <input type="submit" name="action" value="Add">
+            <input type="submit" name="action" value="View">
+        </form>
+    </div>
+</body>
+</html>

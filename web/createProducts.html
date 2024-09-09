@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Product Adding Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add a new clothe</h1>
+        <form action="MainController" method="POST">
+            Product ID:<input type="text" name="productID" required=""/>
+            </br>Product Name:<input type="text" name="name" required=""/>
+            </br>Product Price:<input type="text" name="price" required=""/>
+            </br>Product Quantity: <input type="number" name="quantity" required=""/>
+            </br>Product Status: <input type="number" name="status" required="" min="0" max="1" step="1"/>
+            </br><div>
+                <input type="submit" name="action" value="AddProduct"/>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form>
+    </body>
+</html>
