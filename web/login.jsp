@@ -467,7 +467,7 @@
         <input type="hidden" id="loginError" value="${requestScope.ERROR}">
         <div class="link">
             <a href="MainController?action=Create_Page">Create an account</a>
-            <a href="https://accounts.google.com/o/oauth2/auth?scope=email%20profile%20openid&redirect_uri=http://localhost:8084/PRJ301_T3S1_JSTL/LoginGoogleHandler&response_type=code&client_id=996746380802-c7hh05j9jqtr2jpbidajq4g8hel30p0f.apps.googleusercontent.com">Login With Google</a>
+            <a href="https://accounts.google.com/o/oauth2/auth?scope=email%20profile%20openid&redirect_uri=http://localhost:8084/PRJ301_T3S1_JSTL/LoginGoogleHandler&response_type=code&client_id=*********">Login With Google</a>
         </div>
     </form>
    <div>
